@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velas Quantfury - Ilumine seu mundo</title>
+    <style>
+        :root {
+            --primary-color: #d4a373;
+            --secondary-color: #faedcd;
+            --text-color: #333;
+            --bg-color: #fefae0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .shipping-banner {
+            background-color: #ccd5ae;
+            text-align: center;
+            padding: 0.8rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 3rem 0 2rem;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .about-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 3rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 3rem 1rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #555;
+            font-size: 0.8rem;
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            .footer-content { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="shipping-banner">
+        ✈️ Sede física no Brasil | Fazemos envios internacionais para qualquer lugar do mundo! 🌍
+    </div>
+
+    <header>
+      <main>
+        <h2 class="section-title">Nossas Coleções</h2>
+        
+        <div class="products-grid">
+            <!-- Produto 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Velas Aromáticas">
+                <div class="product-info">
+                    <h3>Velas Aromáticas</h3>
+                    <p>Fragrâncias exclusivas para relaxar e renovar as energias da sua casa.</p>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1596433809252-260c27459eb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Velas de Soja Ecológicas">
+                <div class="product-info">
+                    <h3>Velas de Soja Ecológicas</h3>
+                    <p>100% naturais, queima limpa e sustentável. Perfeitas para o meio ambiente.</p>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1602127244583-12a80f089678?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Velas Decorativas">
+                <div class="product-info">
+                    <h3>Velas Decorativas</h3>
+                    <p>Design moderno e elegante para dar um toque sofisticado a qualquer espaço.</p>
+                </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1608985160863-718f2fbb1435?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Velas Terapêuticas">
+                <div class="product-info">
+                    <h3>Velas Terapêuticas</h3>
+                    <p>Óleos essenciais puros selecionados para aromaterapia e bem-estar profundo.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="about-section">
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Sobre a Quantfury</h2>
+            <p>A Velas Quantfury nasceu da paixão por criar ambientes acolhedores e memoráveis. Produzimos nossas velas com materiais da mais alta qualidade, garantindo aromas duradouros e uma queima perfeita. Com orgulho, nossa sede física está localizada no Rio de Janeiro, Brasil, mas espalhamos nossa luz enviando nossos produtos internacionalmente para qualquer parte do mundo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Velas Quantfury</h4>
+                <p>Criando luz, aroma e momentos.</p>
+                <p><strong>Proprietário:</strong> Wallace da Silva Lima</p>
+                <p><strong>Documento:</strong> 10941802701</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Nossa Sede Física</h4>
+                <p>R. Hidrolina 18</p>
+                <p>Guaratiba</p>
+                <p>Rio de Janeiro - RJ</p>
+                <p>CEP: 23031-160</p>
+                <p>Brasil</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Envios</h4>
+                <p>📦 Enviamos para todo o Brasil</p>
+                <p>✈️ Envios Internacionais (Worldwide Shipping)</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 Velas Quantfury. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+        <h1>Velas Quantfury</h1>
+        <p>A luz e o aroma que transformam o seu ambiente</p>
+    </header>
